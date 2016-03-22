@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0;
+	padding:0;
+}
+
+.siteContainer{
+	width:600px;
+	margin:0 auto;
+			
+}
+img{
+	width:60%;
+}
+.productos, .canasta{
+	float:left;
+	width:150px;
+	border:1px dashed #333;
+	min-height:200px;
+}

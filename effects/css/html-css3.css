@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0;
+	padding:0;
+}
+
+.siteContainer{
+	width:600px;
+	margin:0 auto;
+			
+}
+img{
+	width:30%;
+}
+/*Animación Simple*/
+.rotarY{
+   transform:rotateY(0deg);
+   transition-duration: 2s;
+   -webkit-transform:rotateY(0deg);
+   -webkit-transition-duration: 2s;
+}
+.rotarY:hover{
+   transform:rotateY(180deg);
+   transition-duration: 2s;
+   -webkit-transform:rotateY(180deg);
+   -webkit-transition-duration: 2s;
+}
+.rotarX{
+   transform:rotateX(0deg);
+   transition-duration: 2s;
+   -webkit-transform:rotateY(0deg);
+   -webkit-transition-duration: 2s;
+}
+.rotarX:hover{
+   transform:rotateX(180deg);
+   transition-duration: 2s;
+   -webkit-transform:rotateY(180deg);
+   -webkit-transition-duration: 2s;
+}
+/*Relleno Degradado*/
+#box{
+	width:256px;
+	height:256px;
+	
+	background: #aebcbf; /* Old browsers */
+	background: -moz-linear-gradient(top, #aebcbf 0%, #6e7774 50%, #0a0e0a 51%, #0a0809 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	
+}
+
+/*Animación Infinita*/
+@keyframes rotateinfinite {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+@-webkit-keyframes rotateinfinite {
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(-360deg);
+  }
+}
+.rotateinfinite{
+    animation-name: rotateinfinite;-webkit-animation-name: rotateinfinite;
+    animation-timing-function: linear;-webkit-animation-timing-function: linear;
+    animation-iteration-count: infinite;-webkit-animation-iteration-count: infinite;
+    animation-duration: 6s;-webkit-animation-duration: 6s;
+}
+.rotateinfinite:hover {
+     animation-play-state: paused;
+}

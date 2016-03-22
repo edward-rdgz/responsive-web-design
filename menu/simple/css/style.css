@@ -1,0 +1,31 @@
+nav ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+
+nav ul li {
+	display: inline;
+	padding: 5px;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	padding: 5px;
+}
+
+nav a:hover {
+	background-color: #fff;
+	border-radius: 5px;
+	color: #333;
+}
+
+p{
+	text-align: justify;
+}
+
+.container{
+	width: 90%;
+	margin: 0 auto;
+}

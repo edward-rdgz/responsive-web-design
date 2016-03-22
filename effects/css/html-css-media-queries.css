@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0;
+	padding:0;
+}
+
+.siteContainer{	
+	margin:0 auto;	
+		background:#97C747;
+		width:1190px;
+			
+}
+.usuario:before{
+	font-weight:bold;
+	content:"Proporcione el nombre del usuario";
+}
+header{
+	height:140px;
+	background:#666;
+}
+footer{
+	height:120px;
+	background:#999;
+}
+section{
+	height:400px;
+	text-align:center;
+}
+@media (max-width: 1215px)
+{
+    .siteContainer{
+		width:1000px;		
+	} 
+	
+	header h1{
+		font-size:50px;
+	}
+	.usuario:before {
+    content:"Escriba su nombre de usuario";
+	}
+
+          
+}
+
+@media (max-width: 915px)
+{
+   .siteContainer{
+		width:800px;	
+	}
+	header{
+		margin:0 10px;
+		padding:5px 0;
+	}
+	
+	header h1{
+		font-size:30px;
+	}
+        
+	body{
+		background:#09C;
+	}
+	       
+}
+
+@media (max-width: 765px)
+{
+        .siteContainer{
+			width:100%;
+		}
+		header
+        {
+                height:120px;
+        }
+		header h1{
+			font-size:20px;
+		}
+        
+		
+        
+        footer
+        {
+                padding-bottom:70px;
+                height: auto;
+        }
+        
+		body{
+			background:#E300A8;
+		}
+		.usuario:before {
+			content:"Nombre de usuario";
+		}
+}
+
+@media (max-width: 480px)
+{
+        header
+        {
+            text-align: center;
+        }        
+        
+                
+        nav
+        {
+                display:none;
+        }
+        header h1
+        {
+                font-size:40px;
+        }
+        
+		body{
+			background:#025508;
+		}
+		.usuario:before {
+        	content:"Nombre";
+    	}
+}
